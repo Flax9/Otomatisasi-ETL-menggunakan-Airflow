@@ -1,0 +1,7 @@
+apache-airflow-providers-MySQL
+pymysql
+apache-airflow
+pandas
+sqlalchemy
+pymysql
+streamlit
