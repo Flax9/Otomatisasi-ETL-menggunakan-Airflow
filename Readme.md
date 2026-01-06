@@ -51,3 +51,21 @@ MYSQL_WORKER_DB=db_pengawasan_bpom
 # Host Database (Akses dari dalam container Docker)
 DB_HOST=host.docker.internal
 DB_PORT=3306
+
+#### B. Konfigurasi Root (Docker & Airflow)
+Buat file bernama `.env` di **aplication_ci**:
+# --- ENVIRONMENT ---
+CI_ENVIRONMENT=development
+
+# --- APP CONFIG ---
+app.baseURL='http://localhost:8082/'
+app.forceGlobalSecureRequests=false
+
+# --- DATABASE CONNECTION ---
+database.default.hostname=localhost
+database.default.database=db_pengawasan_bpom
+database.default.username=etl_worker_bpom
+# Masukkan password user etl_worker_bpom di sini
+database.default.password=
+database.default.DBDriver=MySQLi
+database.default.port=3306
