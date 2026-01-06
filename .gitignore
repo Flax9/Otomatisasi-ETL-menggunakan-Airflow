@@ -1,0 +1,30 @@
+# --- 1. KEAMANAN (WAJIB) ---
+.env
+.env.local
+.env.production
+# Jangan upload database credential asli Anda!
+
+# --- 2. CODEIGNITER 4 ---
+/vendor/
+/application_ci/vendor/
+/application_ci/writable/
+/application_ci/.env
+/application_ci/phpunit.xml
+.idea/
+.vscode/
+*.log
+
+# --- 3. PYTHON / AIRFLOW ---
+__pycache__/
+*.py[cod]
+.venv/
+env/
+airflow/logs/
+airflow/*.pid
+airflow/airflow-webserver.err
+airflow/airflow-webserver.out
+airflow/airflow.db
+
+# --- 4. OS JUNK FILES ---
+.DS_Store
+Thumbs.db
