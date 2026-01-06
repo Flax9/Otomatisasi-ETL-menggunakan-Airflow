@@ -1,4 +1,4 @@
-# 📊 Sistem Dashboard Pengawasan BPOM (ETL Pipeline)
+tolong koreksi readme saay ini : # 📊 Sistem Dashboard Pengawasan BPOM (ETL Pipeline)
 
 Proyek ini merupakan sistem integrasi antara **Airflow (Python/Docker)** sebagai mesin pengolah data (ETL) dan **CodeIgniter 4 (PHP)** sebagai interface dashboard utama.
 
@@ -30,7 +30,7 @@ Interface CodeIgniter kini dilengkapi dengan visualisasi data interaktif:
 
 Sistem ini membutuhkan **2 file `.env`** yang berbeda. Silakan buat file `.env` di lokasi berikut dan salin konfigurasi di bawah ini:
 
-#### A. Konfigurasi Root (Docker & Airflow)
+# A. Konfigurasi Root (Docker & Airflow)
 Buat file bernama `.env` di **folder root** proyek utama:
 
 ```ini
@@ -51,10 +51,12 @@ MYSQL_WORKER_DB=db_pengawasan_bpom
 # Host Database (Akses dari dalam container Docker)
 DB_HOST=host.docker.internal
 DB_PORT=3306
+```
 
 #### B. Konfigurasi Root (Docker & Airflow)
 Buat file bernama `.env` di **aplication_ci**:
-# --- ENVIRONMENT ---
+```
+'' # --- ENVIRONMENT ---
 CI_ENVIRONMENT=development
 
 # --- APP CONFIG ---
